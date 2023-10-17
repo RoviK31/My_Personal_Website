@@ -226,6 +226,15 @@ html{
     row-gap: 3.2rem;
   }
 
+  .about-container{
+    grid-template-columns: 1fr;
+  }
+
+  .about-me-img{
+    height: 32rem;
+    background-position: center;
+  }
+
 
 }
 

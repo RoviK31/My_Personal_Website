@@ -221,18 +221,18 @@ display: none;
   background-color: var(--color-bg);
 }
 
-.about-me-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+.about-container{
+  grid-template-columns: 1fr 1.5fr;
 }
 
-.about-img {
-  position: absolute;
-  height: 100%;
-  width: 100%;
+.about-me-img {
+  background-image: url('../img/about-me-hd.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
 }
+
+
 
 .soft-skills {
   display: grid;
