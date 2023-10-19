@@ -78,6 +78,7 @@ html{
   text-align: center;
 }
 
+
 .hero-img{
   width: 45vw;
   height: 65vh;
@@ -142,6 +143,7 @@ html{
 
 .nav-open .main-nav{
   opacity: 1;
+  z-index: 10;
   pointer-events: auto;
   visibility: visible;
   transform: translateX(0);
@@ -159,7 +161,8 @@ html{
 
 .nav-open .hero-img, .nav-open .social-icons{
   opacity: 0;
-
+  display: hidden;
+  z-index: -999;
 }
 
 
@@ -321,3 +324,14 @@ html{
   
 }
 
+/* below 400px */
+@media (max-width: 25em){
+  .contact-container{
+    grid-template-columns: 1fr;
+    row-gap: 4.2rem;
+    position: relative; ;
+    text-align: center;
+  }
+
+
+}

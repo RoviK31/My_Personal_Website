@@ -48,6 +48,7 @@
   border-radius: 9px;
   background-color: var(--color-primary);
   color: #fff;
+  z-index: 100;
 }
 
 .main-nav-link.nav-cta:hover,
