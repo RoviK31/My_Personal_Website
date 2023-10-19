@@ -200,6 +200,10 @@ font-family: inherit;
 }
 
 /* animation scroll */
+.section{
+  transition: all 0.5s ease-out;
+}
+
 .section--hidden{
   opacity: 0;
   transform: translateY(8rem);

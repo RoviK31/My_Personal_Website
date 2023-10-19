@@ -14,7 +14,7 @@ btnNav.addEventListener('click', function(){
 
 //smooth scrolling
 const allLinks = document.querySelectorAll('a:link');
-console.log(allLinks);
+
 
 allLinks.forEach(link =>{
   link.addEventListener('click', function(e){
@@ -48,7 +48,7 @@ const sectionHeroEl = document.querySelector('.section-hero')
 const obs = new IntersectionObserver(function(entries){
   const ent = entries[0];
 
-  console.log(ent);
+  
   if(!ent.isIntersecting){
     document.body.classList.add("sticky")
   }
@@ -66,6 +66,28 @@ const obs = new IntersectionObserver(function(entries){
 })
 obs.observe(sectionHeroEl)
 
+// Reveal section
+const allSections = document.querySelectorAll('.section')
+
+
+const reavealSection = function(entries, observer){
+  const [entry] = entries
+  // console.log(entry);
+  if(!entry.isIntersecting) return
+
+  entry.target.classList.remove('section--hidden')
+  observer.unobserve(entry.target)
+}
+
+const sectionObserver = new IntersectionObserver(reavealSection, {
+  root:null,
+  threshold: 0.15,
+
+})
+allSections.forEach(function(section){
+  sectionObserver.observe(section)
+  section.classList.add('section--hidden')
+})
 
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
@@ -80,7 +102,7 @@ function checkFlexGap() {
   document.body.appendChild(flex);
   var isSupported = flex.scrollHeight === 1;
   flex.parentNode.removeChild(flex);
-  console.log(isSupported);
+  // console.log(isSupported);
 
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
