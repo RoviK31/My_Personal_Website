@@ -198,3 +198,9 @@ font-family: inherit;
 .margin-top-lg{
   margin-top: 1.6rem !important;
 }
+
+/* animation scroll */
+.section--hidden{
+  opacity: 0;
+  transform: translateY(8rem);
+}
