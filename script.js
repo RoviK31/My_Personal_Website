@@ -33,9 +33,10 @@ allLinks.forEach(link =>{
       sectionEL.scrollIntoView({behavior: "smooth"})
     }
     
-    if(href !== '#'){
-      window.open(href, '_blank')
-}
+    if(href !== '#' && !href.startsWith("#")){
+      window.open(href), '_blank'
+      
+    }
 
 // close mobile navigation
 if(link.classList.contains('main-nav-link')){
