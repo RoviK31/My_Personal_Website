@@ -20,7 +20,6 @@ allLinks.forEach(link =>{
   link.addEventListener('click', function(e){
     e.preventDefault()
     const href = link.getAttribute('href')
-
     // scroll back to top
     if(href === "#"){
       window.scrollTo({
@@ -28,10 +27,14 @@ allLinks.forEach(link =>{
         behavior: "smooth"
       })
     }
- //scroll to other links
- if(href !== '#' && href.startsWith("#")){
-  const sectionEL = document.querySelector(href)
-  sectionEL.scrollIntoView({behavior: "smooth"})
+    //scroll to other links
+    if(href !== '#' && href.startsWith("#")){
+      const sectionEL = document.querySelector(href)
+      sectionEL.scrollIntoView({behavior: "smooth"})
+    }
+    
+    if(href !== '#'){
+      window.open(href, '_blank')
 }
 
 // close mobile navigation
