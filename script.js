@@ -89,6 +89,27 @@ allSections.forEach(function(section){
   section.classList.add('section--hidden')
 })
 
+
+// Scrolling animation to icons
+const tech_section = document.querySelectorAll('.icon')
+console.log(tech_section);
+
+const techObserver = new IntersectionObserver(function(entries){
+ entries.forEach(entry=>{
+   
+     if(entry.isIntersecting){
+        entry.target.classList.add('show')
+     }else{
+      entry.target.classList.remove('show')
+     }
+
+ })
+
+})
+tech_section.forEach(icon=>{
+  techObserver.observe(icon)
+})
+
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
   var flex = document.createElement("div");
