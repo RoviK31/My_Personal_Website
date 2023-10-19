@@ -154,10 +154,12 @@ html{
 
 .nav-open .icon-mobile-nav[name="close-outline"]{
   display: block;
+  overflow-y: none;
 }
 
-.nav-open .social-icons, .nav-open .hero-img{
-  display: none;
+.nav-open .hero-img, .nav-open .social-icons{
+  opacity: 0;
+
 }
 
 
