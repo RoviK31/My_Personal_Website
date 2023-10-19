@@ -260,6 +260,10 @@ html{
     grid-column: span 2;
   }
 
+  .footer-logo{
+    width: 50%;
+  }
+
 }
 
 @media (max-width: 34em){
@@ -307,6 +311,10 @@ html{
   .cta-img-box{
     height: 32rem;
     grid-row: 1;
+  }
+
+  .footer-logo{
+    width: 80%;
   }
   
 }
