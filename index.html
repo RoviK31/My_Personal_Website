@@ -416,30 +416,32 @@
                 Let's Create Something Amazing - I'm Ready to Work with You!
               </p>
 
-              <form action="#" class="cta-form">
+              <form name="sign-up" netlify class="cta-form" >
                 <div>
                   <label for="full-name">Full Name</label>
                   <input
                     id="full-name"
                     type="text"
                     placeholder="John Doe"
+                    name="full-name"
                     required
                   />
                 </div>
 
                 <div>
-                  <label for="full-name">Email address</label>
+                  <label for="email">Email address</label>
                   <input
                     id="email"
                     type="email"
                     placeholder="me@example.com"
+                    name="email"
                     required
                   />
                 </div>
 
                 <div>
                   <label for="opportunity">Job opportunity</label>
-                  <select id="opportunity" required>
+                  <select id="opportunity" name="opportunity" required>
                     <option value="">Please choose one option</option>
                     <option value="freelance">Freelance</option>
                     <option value="project-base">Project base</option>
