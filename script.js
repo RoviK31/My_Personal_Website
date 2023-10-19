@@ -34,7 +34,11 @@ allLinks.forEach(link =>{
   sectionEL.scrollIntoView({behavior: "smooth"})
 }
 
-
+// close mobile navigation
+if(link.classList.contains('main-nav-link')){
+  bodyEl.classList.toggle('nav-open')
+  
+}
  
   })
 })
