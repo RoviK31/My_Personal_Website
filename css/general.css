@@ -21,10 +21,25 @@ a{
   text-decoration: none;
 }
 
-.header-logo, .footer-logo{
-  height: 6.4rem;
-  width: 6.4rem;
+.header-logo {
+  /* height: 6.4rem;
+  width: 6.4rem; */
+  height: 5.0rem;
 }
+
+.footer-logo{
+  height: 5.5rem;
+  
+}
+
+.download{
+  z-index: -1;
+}
+
+span.dev{
+  color: var(--color-primary);
+}
+
 
 
 :root{

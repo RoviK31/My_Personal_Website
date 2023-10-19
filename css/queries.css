@@ -14,7 +14,8 @@
 
 .hero-img{
   width: 90%;
-
+  height: 70%;
+ 
 }
 }
 
@@ -112,6 +113,7 @@ html{
 /* MOBILE NAVIGATION */
 .btn-mobile-nav{
   display: block;
+  z-index: 9999;
 }
 
 .main-nav{
@@ -126,7 +128,7 @@ html{
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.5s ease-out;
+  transition: all 0.2s ease-out;
   
   /* hide it visually */
   opacity: 0;
@@ -154,9 +156,11 @@ html{
   display: block;
 }
 
-.nav-open .social-icons{
+.nav-open .social-icons, .nav-open .hero-img{
   display: none;
 }
+
+
 
 .main-nav-list{
   flex-direction: column;
