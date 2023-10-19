@@ -24,6 +24,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
     <script defer src="script.js"></script>
   </head>
   <body >
@@ -35,9 +36,9 @@
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#">Home</a></li>
-          <li><a class="main-nav-link" href="#">Projects</a></li>
-          <li><a class="main-nav-link" href="#">About</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">Hire me</a></li>
+          <li><a class="main-nav-link" href="#projects">Projects</a></li>
+          <li><a class="main-nav-link" href="#about">About</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Hire me</a></li>
         </ul>
       </nav>
       <button class="btn-mobile-nav">
@@ -47,7 +48,7 @@
     </header>
 
     <main>
-      <section class="section-hero">
+      <section class="section-hero" id="hero">
         <div class="hero">
           <div class="hero-text-box">
             <h1 class="heading-primary">Front-End Web Developer</h1>
@@ -62,7 +63,7 @@
               <img src="img/icons8-download-48.png" alt="Download icon" style="width: 2.4rem;">
                <!-- <ion-icon class="download" name="download-outline"></ion-icon> -->
               </a>
-            <a href="#" class="btn btn--outline">Projects</a>
+            <a href="#projects" class="btn btn--outline">Projects</a>
             <div class="social-links">
               <div class="social-icons">
                 <a
@@ -119,7 +120,7 @@
         </div>
       </section>
 
-      <section class="section-projects">
+      <section class="section-projects" id="projects">
         <div class="container">
           <span class="subheading">Projects</span>
           <h2 class="heading-secondary">My Recent Piece of Development</h2>
@@ -225,7 +226,7 @@
         </div>
       </section>
 
-      <section class="section-about-me">
+      <section class="section-about-me" id="about">
         <div class="container">
           <span class="subheading">About me</span>
           <h2 class="heading-secondary margin-bottom-sm">Who am I?</h2>
@@ -357,7 +358,7 @@
         </div>
       </section>
 
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <span class="subheading">Hire me</span>
           <h2 class="heading-secondary margin-bottom-sm">Let's Work together</h2>
@@ -457,7 +458,7 @@
           </p>
         </div>
         <div class="address-col">
-          <p class="footer-heading">Contact me</p>
+          <p class="footer-heading">Contact</p>
           <address class="contacts">
             <p class="address">Macabebe Pampanga</p>
 
@@ -470,9 +471,9 @@
         <nav class="nav-col">
           <p class="footer-heading">Quick links</p>
           <ul class="footer-nav">
-            <li><a class="footer-link" href="#">Projects</a></li>
-            <li><a class="footer-link" href="#">About</a></li>
-            <li><a class="footer-link" href="#">Hire me</a></li>
+            <li><a class="footer-link" href="#projects">Projects</a></li>
+            <li><a class="footer-link" href="#about">About</a></li>
+            <li><a class="footer-link" href="#cta">Hire me</a></li>
           </ul>
         </nav>
 
